@@ -12,9 +12,9 @@ class App < Sinatra::Base
 
   post '/puppy' do
     new_puppy = Puppy.new.tap |pup|
-    pup.name = params[:]
-    pup.breed = params[:]
-    pup.age = params[:]
+    pup.name = params[:name]
+    pup.breed = params[:breed]
+    pup.age = params[:age]
    end
   end
 
